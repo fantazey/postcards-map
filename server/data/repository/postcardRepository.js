@@ -14,7 +14,7 @@ class PostcardRepository {
       "city INTEGER," +
       "country INTEGER NOT NULL," +
       "user INTEGER NOT NULL," +
-      "status TEXT DEFAULT \"inactive\"," +
+      "status TEXT NOT NULL DEFAULT \"inactive\"," +
       "FOREIGN KEY(country) REFERENCES country(id)," +
       "FOREIGN KEY(city) REFERENCES city(id)," +
       "FOREIGN KEY(user) REFERENCES user(id)" +
